@@ -17,7 +17,7 @@ load_dotenv()
 BOT_B_TOKEN = os.getenv("BOT_B_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 API_KEY = os.getenv("API_KEY")
-MAX_MESSAGE_LENGTH = 500
+MAX_MESSAGE_LENGTH = 1000
 
 if not BOT_B_TOKEN or not CHAT_ID or not API_KEY:
     raise EnvironmentError("BOT_B_TOKEN, CHAT_ID или API_KEY отсутствуют в .env")
