@@ -73,7 +73,7 @@ async def receive_message(
         try:
             await bot.send_message(
                 chat_id=CHAT_ID,
-                text=f"📨 Получено от Bot A: {message}",
+                text=message,
                 parse_mode="HTML"
             )
             ip = get_remote_address(request)
